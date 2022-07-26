@@ -7,14 +7,18 @@
 <body>
     <h1>Welcome to BuySell!</h1>
     <input type="string" name="o">search here!</input>
-    <p>we are the best buying things compeny! we are good and reliable! we velue our costumers feelings the best! so we use exclemation marks!!</p>
+    <p>we are the bestr buying things compent! we are good and reliable! we velue our costumers feelings the bast! so we use exclemation marks!!</p>
     <h2>foods!</h2>
-    <p>egg</p><img src='static/egg.png'>
-    <p>carrot</p><img src="static/carrot.png">
-    <br><h2>drinks!</h2>
-    <p>almond water</p><img src="static/almond-water.png">
-    <br><h2>other enjoyable items!</h2>
-    <p>birdcage</p><img src="static/birdcage.png">
+    <p>egg</p>
+        <a href="{{ url_for('egg')}}"><img src='static/egg.png'></a>
+    <p>carrot</p>
+        <a href="{{ url_for('carrot')}}"><img src="static/carrot.png"></a>
+    <br>    <h2>drinks!</h2>
+    <p>almond water</p>
+        <a href="{{ url_for('AlmondWater')}}"><img src="static/almond water.png"></a>
+    <br>    <h2>other enjoyable items!</h2>
+    <p>birdcage</p>
+        <a href="{{ url_for('birdcage')}}"><img src="static/birdcage.png"></a>
 
 </body>
 </html>

@@ -14,6 +14,25 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/product-egg')
+def egg():
+    return render_template('product.html', object='egg')
+
+
+@app.route('/product-carrot')
+def carrot():
+    return render_template('product.html', object='carrot')
+
+
+@app.route('/product-ALMwater')
+def AlmondWater():
+    return render_template('product.html', object='almond water')
+
+
+@app.route('/product-birdcage')
+def birdcage():
+    return render_template('product.html', object='birdcage')
+
 
 # Your code should be above
 
