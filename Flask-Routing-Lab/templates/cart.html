@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cart</title>
-</head>
+    <title>BuySell cart</title>
+    <link href='/static/css/style.css' rel="stylesheet">
+</head> 
 <body>
+    <div id='headbar'>
+        <div class='headbar_element'>
+            <a href="{{ url_for('home')}}">go back home</a>
+        </div>
+        <div class='headbar_element'>
+            already in cart
+        </div>
+    </div>
 
+    <h1>you have</h1> 
+    <p>egg <button onclick="add_to_cart('egg')">egg</button></p>
+        <a href="{{ url_for('egg')}}"><img src='static/egg.png'></a>
+    <p>carrot</p>
+        <a href="{{ url_for('carrot')}}"><img src="static/carrot.png"></a>
+    <br>    <h2>drinks!</h2>
+    <p>almond water</p>
+        <a href="{{ url_for('AlmondWater')}}"><img src="static/almond water.png"></a>
+    <br>    <h2>other enjoyable items!</h2>
+    <p>birdcage</p>
+        <a href="{{ url_for('birdcage')}}"><img src="static/birdcage.png"></a>
 </body>
 </html>

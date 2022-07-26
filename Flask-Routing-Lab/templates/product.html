@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Product</title>
+    <title>BuySell {{object}}</title>
+    <link href='/static/css/style.css' rel="stylesheet">
 </head>
-<body>
-    <img src="static/{{object}}.png">{{object}}
+<body>    
+    <div id='headbar'>
+        <div class='headbar_element'>
+            <a href="{{ url_for('home')}}">go back home</a>
+        </div>
+        <div class='headbar_element'>
+            <a href="{{ url_for('cart')}}">go to cart</a>
+        </div>
+    </div>
+
+    <h1>{{object}}</h1>
+    <img src="static/{{object}}.png">
+    <p>this is an {{object}}, it's very delicious. you should totally buy this {{object}} now so you could charish it forever</p>
+    <h3>cost:<italic>{{price}}</italic></h3>
 </body>
 </html>

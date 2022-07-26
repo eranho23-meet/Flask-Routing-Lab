@@ -2,23 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BuySell</title>
+    <title>BuySell home</title>
+    <link href='/static/css/style.css' rel="stylesheet">
 </head>
-<body>
+<body style="background-image: url('static/carusele.png');">
+    <div id='headbar'>
+        <div class='headbar_element'>
+            already at home
+        </div>
+        <div class='headbar_element'>
+            <a href="{{ url_for('cart')}}">go to cart</a>
+        </div>
+    </div>
     <h1>Welcome to BuySell!</h1>
-    <input type="string" name="o">search here!</input>
+    <input type="string" name="">search here!</input>
     <p>we are the bestr buying things compent! we are good and reliable! we velue our costumers feelings the bast! so we use exclemation marks!!</p>
     <h2>foods!</h2>
-    <p>egg</p>
-        <a href="{{ url_for('egg')}}"><img src='static/egg.png'></a>
-    <p>carrot</p>
-        <a href="{{ url_for('carrot')}}"><img src="static/carrot.png"></a>
+    <div class='produce'>
+        <a href="{{ url_for('egg')}}"><img src='static/egg.png'></a><br>
+        egg
+    </div>
+    <div class='produce'>
+        <a href="{{ url_for('carrot')}}"><img src="static/carrot.png"></a><br>
+        carrot
+    </div>
+
     <br>    <h2>drinks!</h2>
-    <p>almond water</p>
-        <a href="{{ url_for('AlmondWater')}}"><img src="static/almond water.png"></a>
+    <div class='produce'>
+        <a href="{{ url_for('AlmondWater')}}"><img src="static/almond water.png"></a><br>
+        almond water
+    </div>
     <br>    <h2>other enjoyable items!</h2>
-    <p>birdcage</p>
-        <a href="{{ url_for('birdcage')}}"><img src="static/birdcage.png"></a>
+    <div class='produce'>
+        <a href="{{ url_for('birdcage')}}"><img src="static/birdcage.png"></a><br>
+        birdcage
+    </div>
+
+    carusele(I don't get it?)
 
 </body>
 </html>

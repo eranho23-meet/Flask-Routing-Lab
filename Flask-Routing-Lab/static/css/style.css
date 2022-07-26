@@ -1,0 +1,19 @@
+.produce {
+	background-color: #cccccc;
+	text-align: center;
+	border: 5px solid black;
+	display: inline-block;	
+}
+
+
+#headbar {
+	background-color: #11aa77;
+	border-bottom: 7px solid #007750;
+}
+
+.headbar_element {
+	border: 2px solid #099970;
+	display: inline-block;	
+	width: 49%;
+	margin: 0px;	
+}
